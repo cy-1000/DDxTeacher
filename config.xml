@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.ddxbuilder.ddxteacher"
+		versionCode = "61"
+        version   = "2.1">
+
+    <name>DDx Teacher</name>
+
+    <description>
+        Differential Diagnosis Aid for Medical Students
+    </description>
+
+	<gap:platform name="ios" />
+	<gap:platform name="android" />
+
+    <author href="http://phonegap.com" email="mededapps@gmail.com">
+        Charles Goldberg, M.D.; Derek Juang, M.D.
+    </author>
+
+    <feature name="http://api.phonegap.com/1.0/device" />
+
+    <preference name="permissions"                value="none"/>
+
+    <preference name="orientation"                value="portrait" />
+    <preference name="stay-in-webview"            value="false" />
+    <preference name="StatusBarOverlaysWebView" 	value="false" />
+    <preference name="exit-on-suspend"            value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen"    value="false" />
+    <preference name="android-installLocation"    value="auto" />
+
+
+    <!-- Plugins can also be added here. -->
+	<gap:plugin name="org.apache.cordova.inappbrowser" />
+	<gap:plugin name="com.phonegap.plugin.statusbar" />
+
+
+    <!-- Define app icon for each platform. -->
+    <icon src="icon.png" />
+	<icon src="icon57.png" gap:platform="ios" width="57" height="57" />
+	<icon src="icon72.png" gap:platform="ios" width="72" height="72" />
+	<icon src="icon76.png" gap:platform="ios" width="76" height="76" />
+	<icon src="icon120.png" gap:platform="ios" width="114" height="114" />
+
+	<!-- retina iPad support: PhoneGap 2.5.0+ only -->
+	<icon src="icon152.png" gap:platform="ios" width="144" height="144" />
+
+	<icon src="icon57.png" gap:platform="android" gap:qualifier="ldpi" />
+	<icon src="icon57.png" gap:platform="android" gap:qualifier="mdpi" />
+	<icon src="icon72.png" gap:platform="android" gap:qualifier="hdpi" />
+	<icon src="icon152.png" gap:platform="android" gap:qualifier="xhdpi" />
+
+    <!-- Define app splash screen for each platform. -->
+	<splash src="splash.png" platform="android" />
+	<splash src="splash.png" />
+	<splash src="Default-568h@2x.png" platform="ios" width="640" height="1136" />
+
+    <access origin="http://127.0.0.1*"/> <!-- allow local pages -->
+	<access origin="*" browserOnly="true"/>
+</widget>
